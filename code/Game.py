@@ -1,11 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-import sys
-
 import pygame
 
-from code.Const import WIN_WIDTH, WIN_HEIGHT, MENU_OPTION
-from code.Level import Level
 from code.Menu import Menu
 from code.Score import Score
 
@@ -13,7 +9,7 @@ from code.Score import Score
 class Game:
     def __init__(self):
         pygame.init()
-        self.window = pygame.display.set_mode(size=(WIN_WIDTH, WIN_HEIGHT))
+        self.window = pygame.display.set_mode(size=(600, 480))
 
     def run(self):
         while True:
